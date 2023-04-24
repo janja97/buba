@@ -15,11 +15,11 @@
                     <div class="heder-tabs mv">
                         <a href="/" class="header-logo">BF</a>
                     </div>
-                    <li class="nav-tab"><a href="https://bubaphotography.com/" class="mx-3">Portfolio</a></li>
-                    <li class="nav-tab"><a href="https://bubaphotography.com/client" class="mx-3">Galery</a></li>
-                    <li class="nav-tab"><a href="https://bubaphotography.com/" class="mx-3 logo" >BF</a></li>
-                    <li class="nav-tab"><a href="https://bubaphotography.com/about" class="mx-3">About</a></li>
-                    <li class="nav-tab"><a href="https://bubaphotography.com/contact" class="mx-3">Contact</a></li>
+                    <li class="nav-tab"><a href="/" class="mx-3">Portfolio</a></li>
+                    <li class="nav-tab"><a href="/client" class="mx-3">Galery</a></li>
+                    <li class="nav-tab"><a href="/" class="mx-3 logo" >BF</a></li>
+                    <li class="nav-tab"><a href="/about" class="mx-3">About</a></li>
+                    <li class="nav-tab"><a href="/contact" class="mx-3">Contact</a></li>
                     <div class="justify-content-center mv">
 						<a href="https://instagram.com/bubaaphotography?igshid=YmMyMTA2M2Y="><img src="/image/icons/instagram-black.png" alt="instagram" class="icons"></a>
 						<a href="https://www.facebook.com/profile.php?id=100090263107531"><img src="/image/icons/facebook-black.png" alt="facebook" class="icons"></a>
