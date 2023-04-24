@@ -15,11 +15,11 @@
                     <div class="heder-tabs mv">
                         <a href="/" class="header-logo">BF</a>
                     </div>
-                    <li class="nav-tab"><a href="/" class="mx-3">Portfolio</a></li>
-                    <li class="nav-tab"><a href="/client" class="mx-3">Galery</a></li>
-                    <li class="nav-tab"><a href="/" class="mx-3 logo" >BF</a></li>
-                    <li class="nav-tab"><a href="/about" class="mx-3">About</a></li>
-                    <li class="nav-tab"><a href="/contact" class="mx-3">Contact</a></li>
+					<li class="nav-tab"><router-link class="mx-3 link" to="/">Portfolio</router-link></li>
+                    <li class="nav-tab"><router-link class="mx-3 link" to="/client">Client</router-link></li>
+                    <li class="nav-tab"><router-link class="mx-3 link logo" to="/">BF</router-link></li>
+                    <li class="nav-tab"><router-link class="mx-3 link" to="/about">About</router-link></li>
+                    <li class="nav-tab"><router-link class="mx-3 link" to="/contact">Contact</router-link></li>
                     <div class="justify-content-center mv">
 						<a href="https://instagram.com/bubaaphotography?igshid=YmMyMTA2M2Y="><img src="/image/icons/instagram-black.png" alt="instagram" class="icons"></a>
 						<a href="https://www.facebook.com/profile.php?id=100090263107531"><img src="/image/icons/facebook-black.png" alt="facebook" class="icons"></a>
@@ -94,7 +94,7 @@ export default {
 	align-items: center;
 }
 
-.nav-tab a {
+.nav-tab .link {
 	font-weight: 700;
 	color: white !important;
 	letter-spacing: 1.5px;
@@ -127,7 +127,7 @@ export default {
     .nav-wrapper {
         justify-content: space-between;
     }
-    .nav-tabs a {
+    .nav-tabs .link {
         color: black  !important;
 		margin: 2px 0;
     }
