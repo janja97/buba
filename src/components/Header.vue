@@ -25,7 +25,7 @@ export default {
 <style setup>
 .header {
     padding-top:200px; 
-    background-image:url('/public/people/peope (28).jpeg');
+    background-image:url('/public/bac/svadba.jpeg');
     position: relative;
     background-position: center;
     background-size: cover;
@@ -33,6 +33,12 @@ export default {
     /* margin-bottom: 100px; */
     width: 100%;
     height: calc(100vh - 100px);
+    
+}
+@media screen and (max-width:991px){
+    .header {
+        background-image: url('/public/bac/svadba-mob.jpeg');
+    }
     
 }
 
@@ -61,7 +67,7 @@ export default {
     outline: 0;
     background: transparent;
 }
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
     .header {
         height: 100vh;
         background-position: right !important;
@@ -71,11 +77,11 @@ export default {
 }
 @media screen and (max-width: 420px){
     .header {
-        background-position: -430px !important;
+        background-position: -460px !important;
 
     }
     
-}
+} */
 /* title */
 h1,h5, hr {
     color: white !important;
