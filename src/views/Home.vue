@@ -7,7 +7,7 @@
       <p class="col-12 col-md-6 text-black text">
         I photograph those heart-warming, beautiful and real moments, I freeze them in time and I tell your story, creating images that will last you a lifetime.
       </p>
-      <Carousel v-bind="settings" :breakpoints="breakpoints">
+      <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" >
         <Slide v-for="slide in images" :key="slide">
           <div class="carousel__item">
             <img :src="slide.UrlImg" alt="" style="width:100%; height:auto;">
@@ -21,7 +21,7 @@
       <!-- secund slider -->
       <p class="col-12 col-md-6 text-black text" style="margin-top:80px;">
         Even if you don't like posing or feel uncomfortable in front of the camera - I got you covered. I will give you tips and guide you through the shoot in a way that you won't feel any pressure.      </p>
-      <Carousel v-bind="settings" :breakpoints="breakpoints">
+      <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" >
         <Slide v-for="slide in images2" :key="slide">
           <div class="carousel__item">
             <img :src="slide.UrlImg" alt="" style="width:100%; height:auto;">
@@ -36,7 +36,7 @@
       <p class="col-12 col-md-6 text-black text" style="margin-top:80px;">
         Photographs are a powerful and invaluable investment. They can capture energy, emotion and movement. One single moment in time can evoke a thousand feelings    
       </p> 
-      <Carousel v-bind="settings" :breakpoints="breakpoints">
+      <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" >
         <Slide v-for="slide in images3" :key="slide">
           <div class="carousel__item">
             <img :src="slide.UrlImg" alt="" style="width:100%; height:auto;">

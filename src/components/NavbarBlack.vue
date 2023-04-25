@@ -1,7 +1,7 @@
 <template>
     <div class="nav-wrapper">
         <div class="logo-container mv">
-            <a href="/" class="header-logo" style="color:black;">BS</a>
+            <router-link class="mx-3 header-logo" to="/">BF</router-link>
         </div>
         <nav>
             <input class="hidden" type="checkbox" id="menuToggle">
@@ -13,7 +13,7 @@
             <div class="nav-container">
                 <ul class="nav-tabs">
                     <div class="heder-tabs mv">
-                        <a href="/" class="header-logo">BS</a>
+                        <router-link class="header-logo" to="/">BF</router-link>
                     </div>
 					<li class="nav-ta"><router-link class="mx-3 link" to="/">Portfolio</router-link></li>
                     <li class="nav-ta"><router-link class="mx-3 link" to="/client">Client</router-link></li>
@@ -41,6 +41,9 @@ export default {
 </script>
 
 <style setup>
+.header-logo {
+	color: black;
+}
 
 .center {
 	text-align: center;
