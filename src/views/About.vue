@@ -68,7 +68,13 @@ name: 'AppAbout',
 
 components: {
     NavbarBlack,
+    },
+    mounted() {
+    var checkbox = document.getElementById("menuToggle");
+    if (checkbox.checked) {
+      checkbox.checked = false;
     }
+  }
 };
 
 </script>

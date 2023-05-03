@@ -17,7 +17,7 @@
         <input type="hidden" name="_next" value="http://bubaphotography.com">
         <input type="text" name="subject"  placeholder="Subject*">
       </div>
-      <textarea placeholder="Messager*" name="text" class="col"></textarea>
+      <textarea placeholder="Message*" name="text" class="col"></textarea>
       <button type="submit">Send</button>
       
     </form>

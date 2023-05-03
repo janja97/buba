@@ -69,6 +69,7 @@ export default defineComponent({
     Form,
     Carousel,
     Slide,
+    Navigation,
   },
 
   data: () => ({
@@ -107,13 +108,20 @@ export default defineComponent({
       { id: '5' ,type: '2', UrlImg:'people/peope (37).jpeg' , alt:'image-slug', class:"vertical" },
     ],
     images3: [
-      { id: '1' ,type: '2', UrlImg:'people/peope (11).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '5' ,type: '2', UrlImg:'people/peope (27).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '2' ,type: '2', UrlImg:'people/peope (9).jpeg' , alt:'image-slug', class:"vertical" },
       { id: '3' ,type: '2', UrlImg:'people/peope (10).jpeg' , alt:'image-slug', class:"vertical" },
+      { id: '5' ,type: '2', UrlImg:'people/peope (27).jpeg' , alt:'image-slug', class:"vertical" },
+      { id: '2' ,type: '2', UrlImg:'people/DSC09993.jpeg' , alt:'image-slug', class:"vertical" },
       { id: '5' ,type: '2', UrlImg:'people/peope (12).jpeg' , alt:'image-slug', class:"vertical" },
+      { id: '1' ,type: '2', UrlImg:'people3/people (1).jpeg' , alt:'image-slug', class:"vertical" },
+
     ],
   }),
+  mounted() {
+    var checkbox = document.getElementById("menuToggle");
+    if (checkbox.checked) {
+      checkbox.checked = false;
+    }
+  },
 })
 </script>
 
@@ -130,6 +138,24 @@ export default defineComponent({
   padding-bottom: 100px;
 }
 
+.vertical {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+@media screen and (min-width:1024px){
+  .carousel__icon  {
+    display: none;
+  }
+}
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 </style>

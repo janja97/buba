@@ -16,7 +16,7 @@
                         <a href="/" class="header-logo">BF</a>
                     </div>
 					<li class="nav-tab"><router-link class="mx-3 link" to="/">Portfolio</router-link></li>
-                    <li class="nav-tab"><router-link class="mx-3 link" to="/client">Client</router-link></li>
+                    <li class="nav-tab"><router-link class="mx-3 link" to="/client">Gallery</router-link></li>
                     <li class="nav-tab"><router-link class="mx-3 link logo" to="/">BF</router-link></li>
                     <li class="nav-tab"><router-link class="mx-3 link" to="/about">About</router-link></li>
                     <li class="nav-tab"><router-link class="mx-3 link" to="/contact">Contact</router-link></li>
@@ -37,6 +37,7 @@
 <script>
 export default {
     name: "AppNavbar",
+
 };
 </script>
 

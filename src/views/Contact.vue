@@ -24,9 +24,16 @@ import Form from '../components/Form.vue'
 
 export default {
   name: 'Contact',
+  
   components: {
     Navbar,
     Form,
+  }, 
+  mounted() {
+    var checkbox = document.getElementById("menuToggle");
+    if (checkbox.checked) {
+      checkbox.checked = false;
+    }
   }
 }
 </script>

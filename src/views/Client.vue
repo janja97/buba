@@ -13,10 +13,17 @@ import Filters from '../components/Filters.vue'
 
 export default {
   name: 'AppFilters',
+  
   components: {
     NavbarBlack,
     Filters,
  
+  },
+  mounted() {
+    var checkbox = document.getElementById("menuToggle");
+    if (checkbox.checked) {
+      checkbox.checked = false;
+    }
   }
 };
 

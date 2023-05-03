@@ -41,19 +41,24 @@ data: () => ({
       { id: '2' ,type: '2', UrlImg:'people2/people (4).jpeg' , alt:'image-slug', class:"vertical" },
       { id: '8' ,type: '2', UrlImg:'people2/people (1).jpeg' , alt:'image-slug', class:"vertical" },
       { id: '4' ,type: '2', UrlImg:'people2/people (7).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '11' ,type: '2', UrlImg:'people2/people (13).jpeg' , alt:'image-slug', class:"vertical" },
+      { id: '11' ,type: '2', UrlImg:'people/peope (9).jpeg' , alt:'image-slug', class:"vertical" },
       { id: '1' ,type: '2', UrlImg:'people2/people (2).jpeg' , alt:'image-slug', class:"vertical" },
       { id: '2' ,type: '2', UrlImg:'people2/people (15).jpeg' , alt:'image-slug', class:"vertical" },
       { id: '3' ,type: '2', UrlImg:'people2/people (10).jpeg' , alt:'image-slug', class:"vertical" },
       { id: '5' ,type: '2', UrlImg:'people2/people (9).jpeg' , alt:'image-slug', class:"vertical" },
       { id: '6' ,type: '2', UrlImg:'people2/people (8).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '8' ,type: '2', UrlImg:'people2/people (14).jpeg' , alt:'image-slug', class:"vertical" },
+
+      { id: '2' ,type: '2', UrlImg:'people3/people (1).jpeg' , alt:'image-slug', class:"vertical" },
+      { id: '3' ,type: '2', UrlImg:'people3/people (2).jpeg' , alt:'image-slug', class:"vertical" },
+      { id: '5' ,type: '2', UrlImg:'people3/people (3).jpeg' , alt:'image-slug', class:"vertical" },
+      { id: '6' ,type: '2', UrlImg:'people3/people (4).jpeg' , alt:'image-slug', class:"vertical" },
+      { id: '8' ,type: '2', UrlImg:'people3/people (5).jpeg' , alt:'image-slug', class:"vertical" },
 
     ],
     images2 : [
       { id: '1' ,type: '2', UrlImg:'people2/people (6).jpeg' , alt:'image-slug', class:"vertical" },
       { id: '2' ,type: '2', UrlImg:'people2/people (20).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '3' ,type: '2', UrlImg:'people2/people (3).jpeg' , alt:'image-slug', class:"vertical" },
+      { id: '2' ,type: '2', UrlImg:'people/DSC09993.jpeg' , alt:'image-slug', class:"vertical" },
       { id: '5' ,type: '2', UrlImg:'people2/people (16).jpeg' , alt:'image-slug', class:"vertical" },
       { id: '6' ,type: '2', UrlImg:'people2/people (18).jpeg' , alt:'image-slug', class:"vertical" },
 
@@ -148,6 +153,18 @@ data: () => ({
   justify-content: center;
   margin: 100px auto;
   text-align: center;
+}
+.vertical , .big {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 

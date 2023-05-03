@@ -38,9 +38,18 @@ export default {
 @media screen and (max-width:991px){
     .header {
         background-image: url('/public/bac/svadba-mob.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+
     }
     
 }
+.carousel__next {
+    width: 35px;
+}
+
+
 
 .header::after {
     position: absolute;
@@ -67,21 +76,7 @@ export default {
     outline: 0;
     background: transparent;
 }
-/* @media screen and (max-width: 768px){
-    .header {
-        height: 100vh;
-        background-position: right !important;
 
-    }
-    
-}
-@media screen and (max-width: 420px){
-    .header {
-        background-position: -460px !important;
-
-    }
-    
-} */
 /* title */
 h1,h5, hr {
     color: white !important;
