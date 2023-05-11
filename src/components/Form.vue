@@ -14,7 +14,7 @@
       <div class="d-flex justify-content-between">
         <input type="text" id="name" placeholder="Name*">
         <input type="email" name="email"  placeholder="Email*" required>
-        <input type="hidden" name="_next" value="http://bubaphotography.com">
+        <input type="hidden" name="_next" value="https://bubaphotography.com">
         <input type="text" name="subject"  placeholder="Subject*">
       </div>
       <textarea placeholder="Message*" name="text" class="col"></textarea>
