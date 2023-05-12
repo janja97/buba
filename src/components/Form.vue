@@ -1,15 +1,6 @@
 <template>
   <div class="container">
     <h5 style="color:black !important;">Let's discuss your business ideas below!</h5>
-    <!-- <form class="form" >
-      <div class="d-flex justify-content-between">
-        <input type="text" id="name" placeholder="Name*" v-model="name">
-        <input type="text" id="email"  placeholder="Email*" v-model="email">
-        <input type="text" id="subject"  placeholder="Subject*" v-model="subject">
-      </div>
-      <textarea placeholder="Email*" id="messager"  v-model="message" class="col" ></textarea>
-      <input type="submit" id="btn" @click="submitForm()" value="Sublit">
-    </form> -->
     <form action="https://formsubmit.co/photographybuba@gmail.com" method="POST" class="form">
       <div class="d-flex justify-content-between">
         <input type="text" id="name" placeholder="Name*">

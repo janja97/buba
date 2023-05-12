@@ -7,10 +7,10 @@
       <p class="col-12 col-md-6 text-black text">
         I photograph those heart-warming, beautiful and real moments, I freeze them in time and I tell your story, creating images that will last you a lifetime.
       </p>
-      <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" >
+      <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true">
         <Slide v-for="slide in images" :key="slide">
           <div class="carousel__item">
-            <img :src="slide.UrlImg" alt="" style="width:100%; height:auto;">
+            <img :src="slide.UrlImg" :alt="slide.alt" style="width:100%; height:auto;">
           </div>
         </Slide>
 
@@ -20,11 +20,12 @@
       </Carousel>
       <!-- secund slider -->
       <p class="col-12 col-md-6 text-black text" style="margin-top:80px;">
-        Even if you don't like posing or feel uncomfortable in front of the camera - I got you covered. I will give you tips and guide you through the shoot in a way that you won't feel any pressure.      </p>
-      <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" >
+        Even if you don't like posing or feel uncomfortable in front of the camera - I got you covered. I will give you tips and guide you through the shoot in a way that you won't feel any pressure.
+      </p>
+      <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true">
         <Slide v-for="slide in images2" :key="slide">
           <div class="carousel__item">
-            <img :src="slide.UrlImg" alt="" style="width:100%; height:auto;">
+            <img :src="slide.UrlImg" :alt="slide.alt" style="width:100%; height:auto;">
           </div>
         </Slide>
 
@@ -32,14 +33,14 @@
           <Navigation />
         </template>
       </Carousel>
-       <!-- three slider -->
+      <!-- three slider -->
       <p class="col-12 col-md-6 text-black text" style="margin-top:80px;">
-        Photographs are a powerful and invaluable investment. They can capture energy, emotion and movement. One single moment in time can evoke a thousand feelings    
-      </p> 
-      <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" >
+        Photographs are a powerful and invaluable investment. They can capture energy, emotion and movement. One single moment in time can evoke a thousand feelings
+      </p>
+      <Carousel v-bind="settings" :breakpoints="breakpoints" :wrap-around="true">
         <Slide v-for="slide in images3" :key="slide">
           <div class="carousel__item">
-            <img :src="slide.UrlImg" alt="" style="width:100%; height:auto;">
+            <img :src="slide.UrlImg" :alt="slide.alt" style="width:100%; height:auto;">
           </div>
         </Slide>
 
@@ -52,6 +53,7 @@
     <Form />
   </div>
 </template>
+
 <script>
 import Navbar from '../components/Navbar.vue'
 import Header from '../components/Header.vue'
@@ -72,57 +74,59 @@ export default defineComponent({
     Navigation,
   },
 
-  data: () => ({
-    // carousel settings
-    settings: {
-      itemsToShow: 1,
-      snapAlign: 'center',
-    },
-    // breakpoints are mobile first
-    // any settings not specified will fallback to the carousel settings
-    breakpoints: {
-      // 700px and up
-      700: {
-        itemsToShow: 3,
+  data() {
+    return {
+      // carousel settings
+      settings: {
+        itemsToShow: 1,
         snapAlign: 'center',
       },
-      // 1024 and up
-      1024: {
-        itemsToShow: 5,
-        snapAlign: 'start',
-      },
-    },
-    // images array
-    images: [
-      { id: '1' ,type: '2', UrlImg:'people/peope (24).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '5' ,type: '2', UrlImg:'people/peope (19).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '2' ,type: '2', UrlImg:'people/peope (17).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '3' ,type: '2', UrlImg:'people/peope (6).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '5' ,type: '2', UrlImg:'people/peope (39).jpeg' , alt:'image-slug', class:"vertical" },
-    ],
-    images2: [
-      { id: '1' ,type: '2', UrlImg:'people/peope (36).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '5' ,type: '2', UrlImg:'people/peope (38).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '2' ,type: '2', UrlImg:'people/peope (30).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '3' ,type: '2', UrlImg:'people/peope (31).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '5' ,type: '2', UrlImg:'people/peope (37).jpeg' , alt:'image-slug', class:"vertical" },
-    ],
-    images3: [
-      { id: '3' ,type: '2', UrlImg:'people/peope (10).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '5' ,type: '2', UrlImg:'people/peope (27).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '2' ,type: '2', UrlImg:'people/DSC09993.jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '5' ,type: '2', UrlImg:'people/peope (12).jpeg' , alt:'image-slug', class:"vertical" },
-      { id: '1' ,type: '2', UrlImg:'people3/people (1).jpeg' , alt:'image-slug', class:"vertical" },
 
-    ],
-  }),
-  mounted() {
-    var checkbox = document.getElementById("menuToggle");
-    if (checkbox.checked) {
-      checkbox.checked = false;
-    }
+      breakpoints: {
+        // 700px and up
+        700: {
+          itemsToShow: 3,
+          snapAlign: 'center',
+        },
+        // 1024 and up
+        1024: {
+          itemsToShow: 5,
+          snapAlign: 'start',
+        },
+      },
+      // images array
+      images:[
+        { id: '1', type: '2', UrlImg: 'people/peope (24).jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '5', type: '2', UrlImg: 'people/peope (19).jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '2', type: '2', UrlImg: 'people/peope (17).jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '3', type: '2', UrlImg: 'people/peope (6).jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '5', type: '2', UrlImg: 'people/peope (39).jpeg', alt: 'image-slug', class: 'vertical' },
+      ],
+      images2: [
+        { id: '1', type: '2', UrlImg: 'people/peope (36).jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '5', type: '2', UrlImg: 'people/peope (38).jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '2', type: '2', UrlImg: 'people/peope (30).jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '3', type: '2', UrlImg: 'people/peope (31).jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '5', type: '2', UrlImg: 'people/peope (37).jpeg', alt: 'image-slug', class: 'vertical' },
+      ],
+      images3: [
+        { id: '3', type: '2', UrlImg: 'people/peope (10).jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '5', type: '2', UrlImg: 'people/peope (27).jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '2', type: '2', UrlImg: 'people/DSC09993.jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '5', type: '2', UrlImg: 'people/peope (12).jpeg', alt: 'image-slug', class: 'vertical' },
+        { id: '1', type: '2', UrlImg: 'people3/people (1).jpeg', alt: 'image-slug', class: 'vertical' },
+      ],
+    };
   },
-})
+  mounted() {
+    this.$nextTick(() => {
+      var checkbox = document.getElementById('menuToggle');
+      if (checkbox.checked) {
+        checkbox.checked = false;
+      }
+    });
+  },
+});
 </script>
 
 <style setup>

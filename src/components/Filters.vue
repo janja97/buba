@@ -1,13 +1,5 @@
 <template>
    <div>
-    <!-- <div class="nav  d-flex justify-content-center">
-      <a @click="resetFilter">All</a>
-      <a @click="filterImages(1)">Nature</a>
-      <a @click="filterImages(2)">People</a>
-      <a @click="filterImages(3)">Client</a>
-      <a @click="filterImages(4)">Hotel</a>
-      <a @click="filterImages(5)">Street</a>
-    </div> -->
     <div class="grid-div">
       <div class=""  v-for="image in images" :key="image.id" :class=" image.class ">
         <img  :src="image.UrlImg" alt="image.alt" >
@@ -63,19 +55,6 @@ data: () => ({
       { id: '6' ,type: '2', UrlImg:'people2/people (18).jpeg' , alt:'image-slug', class:"vertical" },
 
     ],
-
-    // const filteredImages = ref(images.value);
-
-    // const filterImages = (type) => {
-    //   filteredImages.value = images.value.filter(image => image.type == type);
-
-    // }
-
-    // const resetFilter = () => {
-    //   filteredImages.value = images.value;
-    // }
-
-    // return { filteredImages, filterImages, resetFilter };
   }),
 };
 </script>
