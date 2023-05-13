@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Cache-Control" content="no-store" />
+    <!-- <meta http-equiv="Cache-Control" content="no-store" /> -->
 
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>camera.ico">
@@ -16,13 +16,13 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->  
     <router-view></router-view>
-    <script>
+    <!-- <script>
       const timestamp = new Date().getTime();
       const url = `https://www.example.com/my-resource?timestamp=${timestamp}`;
       app.use((req, res, next) => {
         res.setHeader('Cache-Control', 'no-store');
         next();
       });
-    </script>
+    </script> -->
   </body>
 </html>
