@@ -40,7 +40,7 @@ export default {
 <style setup>
 .contact-header {
     padding-top:200px; 
-    background-image:url('/public/people2/people (21).jpeg');
+    background-image:url('/public/bac/bac-contact.jpeg');
     position: relative;
     background-position: center;
     background-size: cover;
